@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "GitHub Pull Request Helper",
+  "version": "1.0",
+  "description": "GitHub Pull Request 관련 다양한 부가 기능들을 이용해보세요.",
+  "icons": {
+    "16": "images/logo_16.png",
+    "32": "images/logo_32.png",
+    "48": "images/logo_48.png",
+    "128": "images/logo_128.png"
+  },
+  "action": {
+    "default_popup": "popup/popup.html"
+
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://github.com/*/*/pull/*/files"],
+      "js": ["content.js"],
+      "css": ["style.css"]
+    }
+  ]
+}

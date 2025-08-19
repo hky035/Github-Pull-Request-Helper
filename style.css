@@ -1,0 +1,11 @@
+#pr-description-viewer-container {
+    border: 1px solid #30363d;
+    border-radius: 6px;
+    padding: 16px;
+    margin-bottom: 16px;
+}
+
+.pr-description-summary {
+    font-weight: bold;
+    cursor: pointer;
+}
