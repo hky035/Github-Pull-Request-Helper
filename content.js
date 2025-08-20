@@ -103,6 +103,3 @@ const observer = new MutationObserver(() => {
 
 // Start observing the document body for added/removed nodes in the entire subtree.
 observer.observe(document.body, { childList: true, subtree: true });
-
-// Run the function once on initial load. This handles cases where the user lands directly on the 'Files changed' page, as the observer only fires on changes.
-injectDescription();
