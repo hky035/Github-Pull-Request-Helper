@@ -22,6 +22,17 @@ Pull Request Description 정보를 받아오기 위해 API 요청을 수행합�
 
 또한, Tab이 닫히는 등 세션이 종료된 경우에는 Session Storage에 저장된 값이 자동으로 삭제됩니다.
 
+## 🛠 Development
+
+```
+extension/   # 확장 프로그램 소스 (Chrome에 로드 / 웹스토어 업로드 대상)
+assets/      # 로고 원본, 웹스토어 스크린샷 등 확장에 포함되지 않는 자료
+scripts/     # 패키징 스크립트
+```
+
+- 로컬 테스트: `chrome://extensions` → 개발자 모드 → "압축해제된 확장 프로그램 로드" → `extension/` 선택
+- 패키징: `./scripts/package.sh` 실행 시 `dist/github-pull-request-helper-v{version}.zip` 생성
+
 ## 📞 Contact
 - Mail: hky035@gmail.com
 - Github: https://github.com/hky035
